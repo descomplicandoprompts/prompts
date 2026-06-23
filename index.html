@@ -31,6 +31,19 @@
   }
 
   /* ── HEADER ── */
+
+
+
+
+
+
+
+
+
+
+
+
+  
   header {
     border-bottom: 1px solid var(--border);
     padding: 0 40px;
@@ -69,6 +82,26 @@
     max-width: 960px;
     margin: 0 auto;
   }
+
+
+.hero-banner {
+  width: 100%;
+  height: 560px;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.85) 100%),
+    url('https://descomplicandoprompts.github.io/prompts/header_degrade.png');
+  background-size: cover;
+  background-position: center 32%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--border);
+}
+
+
+
+
+
+
+
   .hero-label {
     font-size: 11px;
     font-weight: 500;
@@ -469,6 +502,7 @@
     .stats { flex-direction: column; gap: 8px; }
     .stat:first-child, .stat:last-child, .stat { border-radius: 10px; }
     .prompt-tools { display: none; }
+    .hero-banner { height: 170px; background-position: center top; }
     .hero h1 { font-size: 34px; }
   }
 
@@ -499,6 +533,9 @@
   <span class="header-badge">Biblioteca de Prompts para Influencer IA</span>
 </header>
 
+<!-- HEADER IMAGE -->
+<div class="hero-banner"></div>
+
 <!-- HERO -->
 <div class="hero">
   <div class="hero-label">Coleção de Prompts</div>
@@ -513,7 +550,7 @@
     <div class="stat-label">Prompts</div>
   </div>
   <div class="stat">
-    <div class="stat-num">9</div>
+    <div class="stat-num">11</div>
     <div class="stat-label">Categorias</div>
   </div>
   <div class="stat">
@@ -538,6 +575,8 @@
 <div class="categories" id="cat-bar">
   <button class="cat-btn active" data-cat="all">Todos</button>
   <button class="cat-btn" data-cat="meus-prompts">⭐ Meus Prompts</button>
+  <button class="cat-btn" data-cat="videos-pov">🎥 Videos POV</button>
+  <button class="cat-btn" data-cat="imagens-pov">🛏️ Imagens POV</button>
   <button class="cat-btn" data-cat="influencer">👤 Influencer</button>
   <button class="cat-btn" data-cat="animacao">🎬 Animação</button>
   <button class="cat-btn" data-cat="gancho">🪝 Ganchos</button>
@@ -914,10 +953,10 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
 <div class="divider"></div>
 
   <!-- ═══════════════ SEÇÃO: INFLUENCER ═══════════════ -->
-  <div class="section" data-category="influencer">
+  <div class="section" data-category="videos-pov">
     <div class="section-header">
-      <div class="section-icon">👤</div>
-      <div class="section-title">Videos POV -SEM APARECER-</div>
+      <div class="section-icon">🎥</div>
+      <div class="section-title">Videos POV</div>
       <span class="section-count">7 prompts</span>
     </div>
 
@@ -926,7 +965,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
 
 
     <!-- Prompt 16 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">16</span>
@@ -1103,7 +1142,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
 
 
 <!-- Prompt 17 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">17</span>
@@ -1126,7 +1165,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
     </div>
 
 <!-- Prompt 18 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">18</span>
@@ -1148,7 +1187,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
     </div>
 
 <!-- Prompt 19 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">19</span>
@@ -1170,7 +1209,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
 <!-- Prompt 19 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">19</span>
@@ -1192,7 +1231,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
 <!-- Prompt 20 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">20</span>
@@ -1240,12 +1279,69 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
 
   <div class="divider"></div>
 
-  <!-- ═══════════════ SEÇÃO: INFLUENCER ═══════════════ -->
+    <div class="divider"></div>
+  <!-- ═══════════════ SEÇÃO: IMAGENS POV ═══════════════ -->
+  <div class="section" data-category="imagens-pov">
+    <div class="section-header">
+      <div class="section-icon">🛏️</div>
+      <div class="section-title">Imagens POV</div>
+      <span class="section-count">2 prompts</span>
+    </div>
+    <!-- Prompt 01 -->
+    <div class="prompt-card" data-category="imagens-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Produtos Dispostos na Cama</span><span class="prompt-desc">Imagem 9:16 com peças sobre cama off white, mão morena clara e luz natural lateral • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 dessas peças dispostas em uma cama com lençol off white, realista sem parecer IA, com uma mão morena clara sobre as peças com aneis bonitos no dedo e pulseira. Iluminação natural suave vindo da lateral esquerda, criando sombras leves e realistas. Nada de luz artificial ou estúdio.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Produtos Dispostos na Cama', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Prompt 02 -->
+    <div class="prompt-card" data-category="imagens-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Produtos Dispostos no Sofá</span><span class="prompt-desc">Imagem 9:16 com peças sobre sofá off white, mão morena clara e luz natural lateral • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gere uma imagem no formato 9:16 dessas peças dispostas em um sofá off white, realista sem parecer IA, com uma mão de pele morena clara com aneis bonitos e delicados no dedo e pulseira delicada. Iluminação natural suave vindo da lateral esquerda, criando sombras leves e realistas. Nada de luz artificial ou estúdio.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Produtos Dispostos no Sofá', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ═══════════════ SEÇÃO: INFLUENCER ═══════════════ -->
   <div class="section" data-category="influencer">
     <div class="section-header">
       <div class="section-icon">👤</div>
       <div class="section-title">Criando Influencer</div>
-      <span class="section-count">2 prompts</span>
+      <span class="section-count">6 prompts</span>
     </div>
 
     <!-- Prompt 1 -->
@@ -1256,6 +1352,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
           <span class="prompt-title-wrap"><span class="prompt-title">Criando o Rosto da Influencer</span><span class="prompt-desc">Gera retrato 3x4 ultrarrealista usando 2 imagens de referência • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -1310,6 +1407,7 @@ Não criar rosto genérico de IA. Não criar pele plástica. Não suavizar demai
           <span class="prompt-title-wrap"><span class="prompt-title">Criando o Corpo da Influencer</span><span class="prompt-desc">Corpo inteiro 9:16 em quarto brasileiro, preservando identidade facial • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -1349,7 +1447,112 @@ Não trocar o rosto da Imagem 1. Não modificar a identidade facial. Não criar 
         </div>
       </div>
     </div>
-  </div>
+  
+
+ <!-- Prompt 03 -->
+    <div class="prompt-card" data-category="influencer">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Base da Influencer no Quarto</span><span class="prompt-desc">Prompt-base com idade, cabelo, quarto simples e blusa preta • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Uma mulher de [Coloque a Idade Aqui] anos de idade, influencer brasileira. Cabelos (definir a cor e comprimento). Oculos de grau (opcional). Ela está em seu quarto simples no apartamento no interior do Brasil. Ela olha de frente para a câmera, luzes naturais realistas e ela está vestida com uma blusa preta.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Base da Influencer no Quarto', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Prompt 04 -->
+    <div class="prompt-card" data-category="influencer">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Modelo da Cintura para Cima</span><span class="prompt-desc">Variação para enquadramento da cintura para cima • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Agora vamos deixar ela mostrando da cintura pra cima.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Modelo da Cintura para Cima', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Prompt 05 -->
+    <div class="prompt-card" data-category="influencer">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cenário Quarto Realista</span><span class="prompt-desc">Mantém a posição e coloca a influencer em quarto realista com cama branca • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Agora coloque ela no quarto realista na mesma posição, a cama está com lençol branco e meio bagunçadinha mas não tanto.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cenário Quarto Realista', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Prompt 06 -->
+    <div class="prompt-card" data-category="influencer">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cenário de Banheiro</span><span class="prompt-desc">Mantém a posição e muda para banheiro com porta de madeira, box e toalha vermelha • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools">
+          <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag chatgpt">ChatGPT</span>
+          <span class="tool-tag gemini">Gemini</span>
+        </div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Agora coloque ela no banheiro na mesma posição, a porta atras é de madeira tom medio, como se ela estivesse de frente para o espelho e só aparece meia porta aberta, tem um box de vidro transparente e uma toalha vermelha dobrada e pendurada no box atras.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cenário de Banheiro', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
 
   <div class="divider"></div>
 
@@ -3237,4 +3440,4 @@ An authentic, emotionally compelling product reaction animation that captures ge
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
-</html>
+</html>   
