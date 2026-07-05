@@ -31,19 +31,6 @@
   }
 
   /* ── HEADER ── */
-
-
-
-
-
-
-
-
-
-
-
-
-  
   header {
     border-bottom: 1px solid var(--border);
     padding: 0 40px;
@@ -76,14 +63,6 @@
     font-weight: 300;
   }
 
-  /* ── HERO ── */
-  .hero {
-    padding: 80px 40px 60px;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-
 .hero-banner {
   width: 100%;
   height: 560px;
@@ -96,12 +75,12 @@
   border-bottom: 1px solid var(--border);
 }
 
-
-
-
-
-
-
+  /* ── HERO ── */
+  .hero {
+    padding: 80px 40px 60px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
   .hero-label {
     font-size: 11px;
     font-weight: 500;
@@ -129,6 +108,8 @@
     margin-bottom: 20px;
     font-style: italic;
   }
+
+
   .hero h1 span { color: var(--accent); font-style: normal; font-weight: 500; }
   .hero p {
     color: var(--muted);
@@ -136,6 +117,8 @@
     font-weight: 300;
     font-size: 16px;
   }
+
+
 
   /* ── SEARCH ── */
   .search-wrap {
@@ -502,30 +485,7 @@
     .stats { flex-direction: column; gap: 8px; }
     .stat:first-child, .stat:last-child, .stat { border-radius: 10px; }
     .prompt-tools { display: none; }
-  
     .hero h1 { font-size: 34px; }
-
-
-
-
-  .hero-banner {
-    height: 240px;
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: #0f0d0b;
-  }
-
-  
-}
-
-
-
-
-
-
-
-
   }
 
   /* ── HIGHLIGHT SEARCH ── */
@@ -554,10 +514,7 @@
   </div>
   <span class="header-badge">Biblioteca de Prompts para Influencer IA</span>
 </header>
-
-<!-- HEADER IMAGE -->
 <div class="hero-banner"></div>
-
 <!-- HERO -->
 <div class="hero">
   <div class="hero-label">Coleção de Prompts</div>
@@ -568,11 +525,11 @@
 <!-- STATS -->
 <div class="stats">
   <div class="stat">
-    <div class="stat-num" id="total-prompts">+90</div>
+    <div class="stat-num" id="total-prompts">169</div>
     <div class="stat-label">Prompts</div>
   </div>
   <div class="stat">
-    <div class="stat-num">11</div>
+    <div class="stat-num">17</div>
     <div class="stat-label">Categorias</div>
   </div>
   <div class="stat">
@@ -597,16 +554,22 @@
 <div class="categories" id="cat-bar">
   <button class="cat-btn active" data-cat="all">Todos</button>
   <button class="cat-btn" data-cat="meus-prompts">⭐ Meus Prompts</button>
+   <button class="cat-btn" data-cat="imagens-pov">🛏️ Imagens POV</button>
   <button class="cat-btn" data-cat="videos-pov">🎥 Videos POV</button>
-  <button class="cat-btn" data-cat="imagens-pov">🛏️ Imagens POV</button>
-  <button class="cat-btn" data-cat="influencer">👤 Influencer</button>
+   <button class="cat-btn" data-cat="influencer">👤 Influencer</button>
   <button class="cat-btn" data-cat="animacao">🎬 Animação</button>
   <button class="cat-btn" data-cat="gancho">🪝 Ganchos</button>
   <button class="cat-btn" data-cat="troca-roupa">👗 Troca de Roupa</button>
   <button class="cat-btn" data-cat="cenario">🏠 Cenário</button>
   <button class="cat-btn" data-cat="cta">📣 CTA</button>
-  <button class="cat-btn" data-cat="tiktokshop">🛍️ TikTok Shop</button>
   <button class="cat-btn" data-cat="unboxing">📦 Unboxing</button>
+  <button class="cat-btn" data-cat="imagens-pov-banheiro">🛁 Banheiro Produto</button>
+  <button class="cat-btn" data-cat="imagens-pov-camas">🛏️ Camas Diferentes</button>
+  <button class="cat-btn" data-cat="imagens-pov-cozinha">🍳 Cenário Cozinha</button>
+  <button class="cat-btn" data-cat="manequim-masculino">🪄 Manequim Masculino</button>
+  <button class="cat-btn" data-cat="manequim-feminino">👗 Manequim Feminino</button>
+  <button class="cat-btn" data-cat="videos-manequim">📹 Vídeos Manequim</button>
+  <button class="cat-btn" data-cat="tiktokshop">🛍️ TikTok Shop</button>
 </div>
 
 <!-- MAIN CONTENT -->
@@ -617,7 +580,7 @@
     <div class="section-header">
       <div class="section-icon">⭐</div>
       <div class="section-title">Meus Prompts</div>
-      <span class="section-count">15 prompts</span>
+      <span class="section-count">27 prompts</span>
     </div>
     <p style="font-size:13px;color:var(--muted);margin:-10px 0 18px;font-weight:300;line-height:1.7;">Prompts de movimento que eu uso para criar meus vídeos 🚀✨</p>
 
@@ -970,7 +933,235 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
 
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">16</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Arrumando o Celular e Chegando pra Trás</span><span class="prompt-desc">Ajusta o celular bem perto da câmera e recua revelando o look • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
       </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa extremamente perto da câmera segurando o celular com as duas mãos. Faz um pequeno ajuste como se estivesse encaixando o aparelho em um suporte que é o mesmo que ela está gravando, causando uma leve tremida e balançado natural na câmera. Em seguida, dá dois passos para trás, revelando o look completo. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Arrumando o Celular e Chegando pra Trás', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">17</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Ajustando o Celular (Leve Tremida)</span><span class="prompt-desc">Posiciona o celular no apoio, tremida realista e recua mostrando o look • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa extremamente perto da câmera segurando o celular com as duas mãos, como se estivesse posicionando o aparelho sobre um apoio para começar a gravar. Ela faz um pequeno ajuste natural, causando uma leve tremidinha realista na câmera, como se tivesse acabado de apoiar o celular. Em seguida, solta o aparelho e dá dois passos naturais para trás, revelando o look completo. Movimento fluido e realista. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Ajustando o Celular (Leve Tremida)', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">18</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Uma Mão no Celular</span><span class="prompt-desc">Ajusta o celular com uma mão e recua revelando o look completo • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa muito perto da câmera como se estivesse apoiando ou ajustando o celular com uma das mãos. Assim que termina, dá dois passos naturais para trás, revelando o look completo. Movimento fluido e realista. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Uma Mão no Celular', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">19</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Arrumando o Cabelo Bem Perto da Câmera</span><span class="prompt-desc">Tronco inclinado ajeitando o cabelo bem perto da câmera, depois recua • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa extremamente perto da câmera com o tronco inclinado para frente ajeitando o cabelo bem pertinho da câmera. Depois finaliza o movimento, dá dois passos naturais para trás, mostrando o look completo. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Arrumando o Cabelo Bem Perto da Câmera', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">20</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Arrumando o Cabelo, Olhando pra Baixo</span><span class="prompt-desc">Inclinada para frente ajeitando o cabelo e depois recua mostrando o look • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa extremamente perto da câmera inclinada para frente ajeitando o cabelo. Depois finaliza o movimento, dá dois passos naturais para trás, mostrando o look completo. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Arrumando o Cabelo, Olhando pra Baixo', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">21</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Mão na Frente da Câmera e Chamando</span><span class="prompt-desc">Palma cobre a câmera, depois afasta a mão fazendo gesto de “vem cá” • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa com a palma da mão cobrindo a câmera toda depois Afasta a mão naturalmente enquanto recua e faz um leve gesto de “vem ca” por 1 segundo, revelando o look completo. Sorriso suave. Sem falar.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Mão na Frente da Câmera e Chamando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">22</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cabelo Atrás da Orelha</span><span class="prompt-desc">Ajeita uma mecha do cabelo atrás da orelha e recua mostrando o look • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">INÍCIO DA ANIMAÇÃO: Ela começa muito próxima da câmera, ajeita uma mecha do cabelo atrás da orelha e logo recua naturalmente até mostrar o look inteiro. Sorriso leve, movimentos fluidos e naturais, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cabelo Atrás da Orelha', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">23</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">CTA — Passinhos pra Trás e Chegando pra Frente Apontando</span><span class="prompt-desc">Recua mostrando o look, avança e aponta pedindo para clicar • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Ela dá um pequeno passo para trás para mostrar o look completo, depois caminha suavemente para a frente e aponta para o canto inferior esquerdo da tela com o dedo virado para baixo, como se estivesse pedindo para a pessoa clicar, mantendo o braço dobrado em um movimento contínuo, sem falar nada e sorrindo naturalmente.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('CTA — Passinhos pra Trás e Chegando pra Frente Apontando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">24</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">CTA — Mexendo no Cabelo e Apontando</span><span class="prompt-desc">Toca o cabelo e aponta para o canto inferior esquerdo pedindo clique • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Ela toca suavemente o cabelo enquanto mostra o look, abaixa a mão e em seguida aponta para o canto inferior esquerdo da tela com o dedo virado para baixo, como se estivesse incentivando a pessoa a clicar, mantendo o braço dobrado em movimento contínuo.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('CTA — Mexendo no Cabelo e Apontando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">25</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">CTA — Puxando a Barra da Blusa e Apontando</span><span class="prompt-desc">Estica a barra da blusa e aponta indicando onde clicar • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Ela segura delicadamente a barra da blusa dando uma leve esticada para baixo para destacar o look, solta a peça e em seguida aponta para o canto inferior esquerdo da tela com o dedo virado para baixo, como se estivesse indicando onde clicar, com o braço dobrado em movimento contínuo, sem falar nada e sorrindo suavemente.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('CTA — Puxando a Barra da Blusa e Apontando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">26</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">CTA — Poses e Apontando</span><span class="prompt-desc">Faz pose de modelo e aponta mostrando onde clicar • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Ela faz uma leve pose de modelo mostrando o look, muda naturalmente de posição e depois aponta para o canto inferior esquerdo da tela com o dedo virado para baixo, como se estivesse mostrando onde clicar, sem falar nada e com um sorriso suave.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('CTA — Poses e Apontando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="meus-prompts">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">27</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">CTA — Passando a Mão na Peça e Apontando</span><span class="prompt-desc">Passa a mão pela roupa e aponta convidando para clicar • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Ela passa as mãos suavemente pelas laterais da roupa para mostrar o look e depois aponta para o canto inferior esquerdo da tela com o dedo virado para baixo, como se estivesse convidando a pessoa a clicar, mantendo o braço dobrado em movimento contínuo, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('CTA — Passando a Mão na Peça e Apontando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="divider"></div>
 
@@ -979,7 +1170,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
     <div class="section-header">
       <div class="section-icon">🎥</div>
       <div class="section-title">Videos POV</div>
-      <span class="section-count">7 prompts</span>
+      <span class="section-count">12 prompts</span>
     </div>
 
 
@@ -1275,7 +1466,7 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
 <!-- Prompt 21 -->
-    <div class="prompt-card" data-category="meus-prompts">
+    <div class="prompt-card" data-category="videos-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
           <span class="prompt-number">22</span>
@@ -1298,10 +1489,104 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
 
+    <div class="prompt-card" data-category="videos-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">23</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Esticando a Peça Várias Vezes</span><span class="prompt-desc">Mãos esticam o tecido para mostrar elasticidade • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">As mãos pegam uma das blusinhas, seguram pela região da cintura e esticam o tecido várias vezes de forma rápida e natural para demonstrar a elasticidade, mantendo a peça sempre visível, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Esticando a Peça Várias Vezes', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">24</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Colocando as Peças na Cama</span><span class="prompt-desc">Mãos organizam as peças uma a uma sobre a cama • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A cama começa vazia. As mãos adicionam as peças uma a uma de forma natural, organizando cada blusinha cuidadosamente até formar uma composição bonita, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Colocando as Peças na Cama', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">25</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Dobrando e Desdobrando</span><span class="prompt-desc">Mãos desdobram e alisam a blusinha sobre a cama • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">As mãos desdobram cuidadosamente a blusinha sobre a cama, alisam o tecido e deixam a peça perfeitamente estendida, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Dobrando e Desdobrando', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">26</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Destacando Detalhes</span><span class="prompt-desc">Mãos levantam a manga para destacar o acabamento • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">As mãos levantam levemente a manga da blusinha para destacar o acabamento e depois a reposicionam naturalmente, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Destacando Detalhes', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-pov">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">27</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Esticando Levemente a Barra da Blusa</span><span class="prompt-desc">Mãos puxam a barra para destacar o acabamento • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">As mãos puxam delicadamente a barra da blusinha para baixo, alisando o tecido e destacando o acabamento, sem falar nada.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Esticando Levemente a Barra da Blusa', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="divider"></div>
-
-    <div class="divider"></div>
   <!-- ═══════════════ SEÇÃO: IMAGENS POV ═══════════════ -->
   <div class="section" data-category="imagens-pov">
     <div class="section-header">
@@ -1309,16 +1594,15 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       <div class="section-title">Imagens POV</div>
       <span class="section-count">2 prompts</span>
     </div>
-    <!-- Prompt 01 -->
     <div class="prompt-card" data-category="imagens-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">23</span>
+          <span class="prompt-number">01</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Produtos Dispostos na Cama</span><span class="prompt-desc">Imagem 9:16 com peças sobre cama off white, mão morena clara e luz natural lateral • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
-          <span class="tool-tag chatgpt">ChatGPT</span>
-          <span class="tool-tag gemini">Gemini</span>
+          <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag gemini">ChatGPT</span>
         </div>
         <div class="expand-btn">▼</div>
       </div>
@@ -1332,17 +1616,15 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
         </div>
       </div>
     </div>
-    <!-- Prompt 02 -->
     <div class="prompt-card" data-category="imagens-pov">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">24</span>
+          <span class="prompt-number">02</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Produtos Dispostos no Sofá</span><span class="prompt-desc">Imagem 9:16 com peças sobre sofá off white, mão morena clara e luz natural lateral • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
-           <span class="tool-tag chatgpt">Grok</span>
-          <span class="tool-tag chatgpt">ChatGPT</span>
-          <span class="tool-tag gemini">Gemini</span>
+          <span class="tool-tag chatgpt">Grok</span>
+          <span class="tool-tag gemini">ChatGPT</span>
         </div>
         <div class="expand-btn">▼</div>
       </div>
@@ -1357,7 +1639,6 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
       </div>
     </div>
   </div>
-
 <!-- ═══════════════ SEÇÃO: INFLUENCER ═══════════════ -->
   <div class="section" data-category="influencer">
     <div class="section-header">
@@ -1370,11 +1651,10 @@ Ela aponta pro canto baixo no esquerdo da tela dedo virado pra baixo como se tiv
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">25</span>
+          <span class="prompt-number">01</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Criando o Rosto da Influencer</span><span class="prompt-desc">Gera retrato 3x4 ultrarrealista usando 2 imagens de referência • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
-           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -1425,7 +1705,7 @@ Não criar rosto genérico de IA. Não criar pele plástica. Não suavizar demai
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">26</span>
+          <span class="prompt-number">02</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Criando o Corpo da Influencer</span><span class="prompt-desc">Corpo inteiro 9:16 em quarto brasileiro, preservando identidade facial • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
@@ -1469,13 +1749,11 @@ Não trocar o rosto da Imagem 1. Não modificar a identidade facial. Não criar 
         </div>
       </div>
     </div>
-  
-
- <!-- Prompt 03 -->
+    <!-- Prompt 03 -->
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">27</span>
+          <span class="prompt-number">03</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Base da Influencer no Quarto</span><span class="prompt-desc">Prompt-base com idade, cabelo, quarto simples e blusa preta • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
@@ -1485,96 +1763,57 @@ Não trocar o rosto da Imagem 1. Não modificar a identidade facial. Não criar 
         </div>
         <div class="expand-btn">▼</div>
       </div>
-      <div class="prompt-body">
-        <div class="prompt-body-inner">
-          <div class="prompt-text">Uma mulher de [Coloque a Idade Aqui] anos de idade, influencer brasileira. Cabelos (definir a cor e comprimento). Oculos de grau (opcional). Ela está em seu quarto simples no apartamento no interior do Brasil. Ela olha de frente para a câmera, luzes naturais realistas e ela está vestida com uma blusa preta.</div>
-          <div class="prompt-actions">
-            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
-            <button class="btn-expand-full" onclick="openModal('Base da Influencer no Quarto', this)">↗ Ver completo</button>
-          </div>
-        </div>
-      </div>
+      <div class="prompt-body"><div class="prompt-body-inner">
+        <div class="prompt-text">Uma mulher de [Coloque a Idade Aqui] anos de idade, influencer brasileira. Cabelos (definir a cor e comprimento). Oculos de grau (opcional). Ela está em seu quarto simples no apartamento no interior do Brasil. Ela olha de frente para a câmera, luzes naturais realistas e ela está vestida com uma blusa preta.</div>
+        <div class="prompt-actions"><button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button><button class="btn-expand-full" onclick="openModal('Base da Influencer no Quarto', this)">↗ Ver completo</button></div>
+      </div></div>
     </div>
     <!-- Prompt 04 -->
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">28</span>
+          <span class="prompt-number">04</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Modelo da Cintura para Cima</span><span class="prompt-desc">Variação para enquadramento da cintura para cima • ChatGPT / Gemini</span></span>
         </div>
-        <div class="prompt-tools">
-           <span class="tool-tag chatgpt">Grok</span>
-          <span class="tool-tag chatgpt">ChatGPT</span>
-          <span class="tool-tag gemini">Gemini</span>
-        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
         <div class="expand-btn">▼</div>
       </div>
-      <div class="prompt-body">
-        <div class="prompt-body-inner">
-          <div class="prompt-text">Agora vamos deixar ela mostrando da cintura pra cima.</div>
-          <div class="prompt-actions">
-            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
-            <button class="btn-expand-full" onclick="openModal('Modelo da Cintura para Cima', this)">↗ Ver completo</button>
-          </div>
-        </div>
-      </div>
+      <div class="prompt-body"><div class="prompt-body-inner">
+        <div class="prompt-text">Agora vamos deixar ela mostrando da cintura pra cima.</div>
+        <div class="prompt-actions"><button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button><button class="btn-expand-full" onclick="openModal('Modelo da Cintura para Cima', this)">↗ Ver completo</button></div>
+      </div></div>
     </div>
     <!-- Prompt 05 -->
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">29</span>
+          <span class="prompt-number">05</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Cenário Quarto Realista</span><span class="prompt-desc">Mantém a posição e coloca a influencer em quarto realista com cama branca • ChatGPT / Gemini</span></span>
         </div>
-        <div class="prompt-tools">
-           <span class="tool-tag chatgpt">Grok</span>
-          <span class="tool-tag chatgpt">ChatGPT</span>
-          <span class="tool-tag gemini">Gemini</span>
-        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
         <div class="expand-btn">▼</div>
       </div>
-      <div class="prompt-body">
-        <div class="prompt-body-inner">
-          <div class="prompt-text">Agora coloque ela no quarto realista na mesma posição, a cama está com lençol branco e meio bagunçadinha mas não tanto.</div>
-          <div class="prompt-actions">
-            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
-            <button class="btn-expand-full" onclick="openModal('Cenário Quarto Realista', this)">↗ Ver completo</button>
-          </div>
-        </div>
-      </div>
+      <div class="prompt-body"><div class="prompt-body-inner">
+        <div class="prompt-text">Agora coloque ela no quarto realista na mesma posição, a cama está com lençol branco e meio bagunçadinha mas não tanto.</div>
+        <div class="prompt-actions"><button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button><button class="btn-expand-full" onclick="openModal('Cenário Quarto Realista', this)">↗ Ver completo</button></div>
+      </div></div>
     </div>
     <!-- Prompt 06 -->
     <div class="prompt-card" data-category="influencer">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">30</span>
+          <span class="prompt-number">06</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Cenário de Banheiro</span><span class="prompt-desc">Mantém a posição e muda para banheiro com porta de madeira, box e toalha vermelha • ChatGPT / Gemini</span></span>
         </div>
-        <div class="prompt-tools">
-          <span class="tool-tag chatgpt">Grok</span>
-          <span class="tool-tag chatgpt">ChatGPT</span>
-          <span class="tool-tag gemini">Gemini</span>
-        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
         <div class="expand-btn">▼</div>
       </div>
-      <div class="prompt-body">
-        <div class="prompt-body-inner">
-          <div class="prompt-text">Agora coloque ela no banheiro na mesma posição, a porta atras é de madeira tom medio, como se ela estivesse de frente para o espelho e só aparece meia porta aberta, tem um box de vidro transparente e uma toalha vermelha dobrada e pendurada no box atras.</div>
-          <div class="prompt-actions">
-            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
-            <button class="btn-expand-full" onclick="openModal('Cenário de Banheiro', this)">↗ Ver completo</button>
-          </div>
-        </div>
-      </div>
+      <div class="prompt-body"><div class="prompt-body-inner">
+        <div class="prompt-text">Agora coloque ela no banheiro na mesma posição, a porta atras é de madeira tom medio, como se ela estivesse de frente para o espelho e só aparece meia porta aberta, tem um box de vidro transparente e uma toalha vermelha dobrada e pendurada no box atras.</div>
+        <div class="prompt-actions"><button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button><button class="btn-expand-full" onclick="openModal('Cenário de Banheiro', this)">↗ Ver completo</button></div>
+      </div></div>
     </div>
-
-</div>
-
-
-
-
-
-
+  </div>
 
   <div class="divider"></div>
 
@@ -1590,7 +1829,7 @@ Não trocar o rosto da Imagem 1. Não modificar a identidade facial. Não criar 
     <div class="prompt-card" data-category="gancho animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">31</span>
+          <span class="prompt-number">03</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Gancho 1 — Apresentação POV Natural</span><span class="prompt-desc">A influencer se aproxima da câmera e mostra detalhe do laço da roupa • Flow / Freepik / Grok</span></span>
         </div>
         <div class="prompt-tools">
@@ -1675,7 +1914,7 @@ A hyper-realistic POV fashion video where the subject feels alive and human, wit
     <div class="prompt-card" data-category="gancho animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">32</span>
+          <span class="prompt-number">04</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Gancho Jogar Roupa 1 — Cobrindo a Lente</span><span class="prompt-desc">A peça de roupa cobre temporariamente a câmera como transição de gancho • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -1745,7 +1984,7 @@ A hyper-realistic POV-style fashion video where the subject naturally walks towa
     <div class="prompt-card" data-category="gancho animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">33</span>
+          <span class="prompt-number">05</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Gancho Jogar Roupa 2 — Movimento Suave</span><span class="prompt-desc">Tecido desliza suavemente na frente da câmera para revelar o look • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -1830,7 +2069,7 @@ The animation should feel like a real girl casually stepping forward and softly 
     <div class="prompt-card" data-category="animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">34</span>
+          <span class="prompt-number">06</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Animação Corpo Inteiro — Movimento Fluido</span><span class="prompt-desc">Movimentos naturais de corpo inteiro com física realista de tecido • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -1891,7 +2130,7 @@ QUALITY RULES:
     <div class="prompt-card" data-category="animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">35</span>
+          <span class="prompt-number">07</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Animação Cabelo — Movimento Natural</span><span class="prompt-desc">Cabelo se move com vento suave enquanto mantém expressão natural • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -1957,7 +2196,7 @@ Hair movement that is indistinguishable from a real video, with each strand resp
     <div class="prompt-card" data-category="animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">36</span>
+          <span class="prompt-number">08</span>
           <span class="prompt-title-wrap"><span class="prompt-title">OOTD Espelho — Apresentação de Roupa</span><span class="prompt-desc">Influencer apresenta o look do dia em frente ao espelho, estilo OOTD • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -2019,7 +2258,7 @@ A hyper-realistic OOTD mirror selfie video that looks exactly like a real girl f
     <div class="prompt-card" data-category="animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">37</span>
+          <span class="prompt-number">09</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Espelho — Giro 360° de Roupa</span><span class="prompt-desc">Giro completo em frente ao espelho mostrando todos os ângulos da roupa • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -2088,7 +2327,7 @@ A smooth, realistic 360-degree outfit turn that showcases the complete clothing 
     <div class="prompt-card" data-category="cta animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">38</span>
+          <span class="prompt-number">10</span>
           <span class="prompt-title-wrap"><span class="prompt-title">CTA Apontar para a Tela</span><span class="prompt-desc">Gesto de apontar para a tela incentivando clique ou compra • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -2149,7 +2388,7 @@ A natural, engaging CTA pointing gesture that looks like a real influencer direc
     <div class="prompt-card" data-category="cta animacao">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">39</span>
+          <span class="prompt-number">11</span>
           <span class="prompt-title-wrap"><span class="prompt-title">CTA Gesto de Swipe Up</span><span class="prompt-desc">Movimento de swipe up para direcionar audiência a stories ou links • Flow / Freepik</span></span>
         </div>
         <div class="prompt-tools">
@@ -2218,10 +2457,11 @@ A realistic, engaging swipe-up CTA gesture that looks exactly like a real influe
     <div class="prompt-card" data-category="troca-roupa">
       <div class="prompt-header" onclick="toggleCard(this)">
         <div class="prompt-title-row">
-          <span class="prompt-number">40</span>
+          <span class="prompt-number">12</span>
           <span class="prompt-title-wrap"><span class="prompt-title">Troca de Roupa — Mesmo Cenário</span><span class="prompt-desc">Recria a mesma pessoa com roupa nova, preservando identidade e cenário • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -2280,6 +2520,7 @@ A photorealistic image of the same person from the reference image, now wearing 
           <span class="prompt-title-wrap"><span class="prompt-title">Troca de Roupa — Múltiplos Looks</span><span class="prompt-desc">Gera variações da mesma pessoa com diferentes looks no mesmo cenário • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -2341,6 +2582,7 @@ OUTPUT FORMAT:
           <span class="prompt-title-wrap"><span class="prompt-title">Novo Cenário — Ambiente Fechado</span><span class="prompt-desc">Transplanta a influencer para um cenário interno diferente com luz natural • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -2397,6 +2639,7 @@ A photorealistic image of the same person from the reference, placed naturally i
           <span class="prompt-title-wrap"><span class="prompt-title">Novo Cenário — Externo / Outdoor</span><span class="prompt-desc">Coloca a influencer em ambiente externo realista preservando identidade • ChatGPT / Gemini</span></span>
         </div>
         <div class="prompt-tools">
+           <span class="tool-tag chatgpt">Grok</span>
           <span class="tool-tag chatgpt">ChatGPT</span>
           <span class="tool-tag gemini">Gemini</span>
         </div>
@@ -2572,6 +2815,1155 @@ An authentic, emotionally compelling product reaction animation that captures ge
           <div class="prompt-actions">
             <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
             <button class="btn-expand-full" onclick="openModal('Unboxing — Reação ao Produto', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: IMAGENS POV — BANHEIRO PRODUTO ═══════════════ -->
+  <div class="section" data-category="imagens-pov-banheiro">
+    <div class="section-header">
+      <div class="section-icon">🛁</div>
+      <div class="section-title">Imagens POV — Banheiro Produto</div>
+      <span class="section-count">10 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro Minimalista com Mármore Branco</span><span class="prompt-desc">Produto em banheiro minimalista com bancada de mármore branco • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro minimalista com bancada de mármore branco. A mão usa anéis delicados e uma pulseira elegante. O produto está em destaque, em primeiro plano, com fundo levemente desfocado. Iluminação natural suave vindo da lateral esquerda, criando sombras leves e realistas. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro Minimalista com Mármore Branco', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro com Bancada de Madeira</span><span class="prompt-desc">Produto em banheiro moderno com bancada de madeira clara e cuba branca • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro moderno com bancada de madeira clara e cuba branca. A mão usa anéis delicados e uma pulseira elegante. O produto é o foco da imagem. Iluminação natural suave pela janela lateral, criando sombras naturais. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro com Bancada de Madeira', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro em Travertino</span><span class="prompt-desc">Produto em banheiro sofisticado com acabamento em travertino bege • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro sofisticado com acabamento em travertino bege. A mão possui anéis discretos e pulseira fina. Fundo levemente desfocado. Luz natural suave entrando pela lateral esquerda. Muito realista, sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro em Travertino', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro Cinza Contemporâneo</span><span class="prompt-desc">Produto em banheiro com porcelanato cinza claro e espelho grande • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro com porcelanato cinza claro e espelho grande ao fundo. A mão usa acessórios elegantes e discretos. O produto está totalmente em foco. Iluminação natural suave e sombras realistas. Sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro Cinza Contemporâneo', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro Clean com Torneira Preta</span><span class="prompt-desc">Produto em banheiro clean com bancada de quartzo branco e torneira preta fosca • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro clean com bancada de quartzo branco e torneira preta fosca. A mão usa anéis bonitos e pulseira delicada. Fundo desfocado, iluminação natural lateral suave. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro Clean com Torneira Preta', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro de Luxo com Metais Dourados</span><span class="prompt-desc">Produto em banheiro de luxo com mármore bege e metais dourados • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro de luxo com detalhes em mármore bege e metais dourados. A mão usa joias discretas e elegantes. Produto em destaque absoluto. Luz natural suave entrando pela janela. Sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro de Luxo com Metais Dourados', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro com Plantas</span><span class="prompt-desc">Produto em banheiro com pedra natural e plantas discretas ao fundo • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro com bancada de pedra natural e decoração com plantas discretas ao fundo. A mão usa anéis e pulseira delicados. Iluminação natural suave, sombras leves e realistas. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro com Plantas', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro Contemporâneo Claro</span><span class="prompt-desc">Produto em banheiro contemporâneo com acabamentos claros e espelho amplo • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro contemporâneo com acabamentos claros e espelho amplo ao fundo. Produto em primeiro plano, fundo desfocado. Mão com anéis elegantes e pulseira fina. Iluminação natural suave e muito realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro Contemporâneo Claro', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">09</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro de Hotel</span><span class="prompt-desc">Produto em banheiro de hotel de alto padrão com bancada de pedra clara • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro de hotel de alto padrão, com bancada de pedra clara e acabamento sofisticado. O produto é o centro da imagem. Iluminação natural suave pela lateral esquerda. Extremamente realista, sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro de Hotel', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-banheiro">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">10</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Banheiro Off-White</span><span class="prompt-desc">Produto em banheiro clean em tons off-white e bege • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sendo segurado por uma mão morena clara em um banheiro clean em tons off-white e bege. A mão usa anéis delicados e pulseira elegante. Fundo suavemente desfocado, iluminação natural suave e sombras realistas. Sem parecer imagem gerada por IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Banheiro Off-White', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: IMAGENS POV — CAMAS DIFERENTES ═══════════════ -->
+  <div class="section" data-category="imagens-pov-camas">
+    <div class="section-header">
+      <div class="section-icon">🛏️</div>
+      <div class="section-title">Imagens POV — Camas Diferentes</div>
+      <span class="section-count">10 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Lençol Puffer Off White</span><span class="prompt-desc">Produto sobre cama com lençol puffer off white • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com lençol puffer off white. Uma mão morena clara com anéis delicados e pulseira elegante repousa naturalmente sobre o produto. Iluminação natural suave vindo da lateral esquerda, criando sombras leves e realistas. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Lençol Puffer Off White', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama de Linho Bege</span><span class="prompt-desc">Produto sobre cama com roupa de cama em linho bege • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com roupa de cama em linho bege. Uma mão morena clara com anéis delicados segura levemente o produto. Fundo elegante e desfocado. Iluminação natural suave pela janela. Extremamente realista, sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama de Linho Bege', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama Branca de Hotel</span><span class="prompt-desc">Produto sobre cama branca impecável estilo hotel de luxo • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama branca impecável estilo hotel de luxo. Uma mão morena clara com pulseira fina e anéis delicados toca o produto de forma natural. Luz natural suave, sombras realistas. Sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama Branca de Hotel', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Manta Tricot</span><span class="prompt-desc">Produto sobre cama com lençol off white e manta de tricô bege • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com lençol off white e manta de tricô bege dobrada aos pés da cama. Uma mão morena clara repousa sobre o produto usando acessórios discretos. Iluminação natural suave. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Manta Tricot', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama Minimalista</span><span class="prompt-desc">Produto sobre cama minimalista com roupa branca e travesseiros volumosos • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama minimalista com roupa de cama branca e travesseiros volumosos. Uma mão morena clara segura delicadamente o produto. Fundo desfocado. Iluminação natural lateral. Muito realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama Minimalista', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Cabeceira Estofada</span><span class="prompt-desc">Produto sobre cama com lençóis claros e cabeceira estofada em tecido bege • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com lençóis claros e cabeceira estofada em tecido bege ao fundo. Uma mão morena clara com anéis elegantes toca o produto naturalmente. Luz natural suave. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Cabeceira Estofada', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Roupa de Cama Cinza Claro</span><span class="prompt-desc">Produto sobre cama com roupa de cama cinza claro de tecido macio • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com roupa de cama cinza claro de tecido macio. Uma mão morena clara segura o produto em primeiro plano. Iluminação natural suave entrando pela janela. Sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Roupa de Cama Cinza Claro', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Almofadas Decorativas</span><span class="prompt-desc">Produto sobre cama off white com almofadas decorativas em tons neutros • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com roupa de cama off white e almofadas decorativas em tons neutros ao fundo. Uma mão morena clara com pulseira delicada repousa sobre o produto. Iluminação natural suave e sombras realistas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Almofadas Decorativas', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">09</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama em Quarto Clean</span><span class="prompt-desc">Produto sobre cama em quarto clean com decoração sofisticada em tons claros • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama em um quarto clean com decoração sofisticada em tons claros. Uma mão morena clara com anéis delicados segura o produto naturalmente. Fundo levemente desfocado. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama em Quarto Clean', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-camas">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">10</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cama com Colcha Matelassê</span><span class="prompt-desc">Produto sobre cama com colcha matelassê bege claro e travesseiros brancos • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma cama com colcha matelassê bege claro e travesseiros brancos. Uma mão morena clara com joias discretas toca o produto de forma natural. Iluminação natural suave pela lateral esquerda, criando sombras leves e realistas. Extremamente realista, sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cama com Colcha Matelassê', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: IMAGENS POV — CENÁRIO COZINHA ═══════════════ -->
+  <div class="section" data-category="imagens-pov-cozinha">
+    <div class="section-header">
+      <div class="section-icon">🍳</div>
+      <div class="section-title">Imagens POV — Cenário Cozinha</div>
+      <span class="section-count">10 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Bancada de Mármore Branco</span><span class="prompt-desc">Produto sobre bancada de mármore branco em cozinha moderna • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de mármore branco em uma cozinha moderna. Uma mão morena clara com anéis delicados e pulseira elegante segura levemente o produto. Iluminação natural suave vindo da lateral esquerda, criando sombras leves e realistas. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Bancada de Mármore Branco', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Bancada de Madeira</span><span class="prompt-desc">Produto sobre bancada de madeira clara em cozinha clean e sofisticada • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de madeira clara em uma cozinha clean e sofisticada. Uma mão morena clara repousa naturalmente sobre o produto usando anéis delicados. Luz natural suave entrando pela janela. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Bancada de Madeira', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Ilha de Cozinha Moderna</span><span class="prompt-desc">Produto sobre ilha de cozinha em quartzo branco • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma ilha de cozinha em quartzo branco. Uma mão morena clara com pulseira elegante segura o produto em primeiro plano. Fundo levemente desfocado. Iluminação natural suave. Sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Ilha de Cozinha Moderna', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha Minimalista</span><span class="prompt-desc">Produto sobre bancada clara em cozinha minimalista com armários brancos • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada clara em uma cozinha minimalista com armários brancos ao fundo. Uma mão morena clara com acessórios discretos toca o produto naturalmente. Luz natural suave, sombras realistas. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha Minimalista', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha com Janela</span><span class="prompt-desc">Produto sobre bancada de pedra clara ao lado de uma janela ampla • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de pedra clara ao lado de uma janela ampla. Uma mão morena clara segura delicadamente o produto. Iluminação natural abundante, sombras suaves e realistas. Sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha com Janela', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha Luxuosa</span><span class="prompt-desc">Produto sobre bancada de mármore bege em cozinha de alto padrão • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de mármore bege em uma cozinha de alto padrão com metais dourados. Uma mão morena clara com anéis elegantes repousa sobre o produto. Iluminação natural suave. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha Luxuosa', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha Escandinava</span><span class="prompt-desc">Produto sobre bancada de madeira clara em cozinha estilo escandinavo • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de madeira clara em uma cozinha estilo escandinavo, com decoração em tons neutros. Uma mão morena clara segura o produto naturalmente. Fundo desfocado. Muito realista, sem aparência de IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha Escandinava', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha com Porcelanato Claro</span><span class="prompt-desc">Produto sobre bancada de quartzo branco em cozinha contemporânea • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de quartzo branco em uma cozinha contemporânea com porcelanato claro. Uma mão morena clara com pulseira delicada toca o produto. Iluminação natural lateral suave. Extremamente realista.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha com Porcelanato Claro', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">09</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha com Café da Manhã</span><span class="prompt-desc">Produto ao lado de xícara de café e flores brancas • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada de cozinha ao lado de uma xícara de café, um prato branco e um pequeno vaso com flores brancas. Uma mão morena clara segura o produto naturalmente. Luz natural suave. Sem parecer imagem gerada por IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha com Café da Manhã', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="imagens-pov-cozinha">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">10</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Cozinha Clean Off White</span><span class="prompt-desc">Produto sobre bancada off white em cozinha clean com decoração minimalista • ChatGPT / Gemini</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Gera uma imagem no formato 9:16 do produto sobre uma bancada off white em uma cozinha clean com armários claros e decoração minimalista. Uma mão morena clara com anéis delicados e pulseira elegante repousa sobre o produto. Iluminação natural suave vindo da lateral esquerda, sombras leves e realistas. Extremamente realista, sem parecer IA.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Cozinha Clean Off White', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: MANEQUIM — LOJA MASCULINA ═══════════════ -->
+  <div class="section" data-category="manequim-masculino">
+    <div class="section-header">
+      <div class="section-icon">🪄</div>
+      <div class="section-title">Manequim — Loja Masculina</div>
+      <span class="section-count">8 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Premium com Mão Tatuada</span><span class="prompt-desc">Camiseta em manequim preto, mão masculina tatuada, loja premium • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Use exatamente a camiseta da imagem enviada, sem alterar a estampa, cores, gola ou tecido. Vista a camiseta em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico preto fino visível abaixo da camiseta, exatamente no estilo de uma loja premium. A camiseta está de frente para a câmera. Uma mão masculina real tatuada, usando um relógio preto, toca levemente a parte frontal da camiseta para destacar o produto. Fundo de uma loja premium com ripado de madeira, móveis sofisticados, iluminação quente em LED e ambiente elegante. Fotografia hiper-realista, aparência de catálogo profissional, textura extremamente detalhada, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Premium com Mão Tatuada', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Boutique Moderna com Luva Preta</span><span class="prompt-desc">Camiseta em manequim preto, mão com luva preta, boutique moderna • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta da imagem enviada. Coloque-a em um manequim preto brilhante sem cabeça, com apenas um pescoço cilíndrico curto e liso, montado sobre um suporte metálico preto fino visível abaixo da camiseta. A camiseta está de frente para a câmera. Uma mão masculina real usando uma luva preta segura suavemente o ombro da camiseta, simulando uma apresentação para TikTok Shop. Fundo de uma boutique moderna com araras minimalistas, iluminação quente, móveis escuros e decoração sofisticada. Fotografia comercial hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Boutique Moderna com Luva Preta', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Streetwear</span><span class="prompt-desc">Camiseta em manequim preto, mão tatuada, ambiente streetwear premium • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta enviada, sem modificar qualquer detalhe da estampa, tecido ou modelagem. Vista a camiseta em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico preto fino visível abaixo da peça. A camiseta está totalmente de frente. Uma mão masculina real tatuada, usando relógio preto, desliza sobre a estampa como em uma apresentação profissional de produto. Fundo de uma loja streetwear premium com paredes de concreto, iluminação em trilhos, móveis modernos e ambiente sofisticado. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Streetwear', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Showroom de Luxo</span><span class="prompt-desc">Camiseta em manequim preto, mão com luva preta, showroom de luxo • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Mantenha exatamente a camiseta da imagem enviada. Vista a peça em um manequim preto brilhante sem cabeça, com apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico preto fino visível abaixo da camiseta. A camiseta está posicionada de frente para a câmera. Uma mão masculina real usando uma luva preta segura delicadamente a gola enquanto a outra aponta para a estampa, simulando uma demonstração profissional. Fundo de um showroom de roupas de luxo com iluminação quente, painéis de madeira, decoração minimalista e atmosfera elegante. Fotografia extremamente realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Showroom de Luxo', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Masculina Premium</span><span class="prompt-desc">Camiseta em manequim preto, mão tatuada com relógio, loja masculina premium • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta enviada. Coloque-a em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico preto fino visível abaixo da camiseta. A camiseta está totalmente de frente para a câmera. Uma mão masculina real tatuada com relógio preto apoia a peça pelo ombro enquanto a outra toca suavemente a estampa, simulando uma apresentação para redes sociais. Fundo de uma loja masculina premium com móveis escuros, iluminação quente, prateleiras elegantes e ambiente sofisticado. Fotografia hiper-realista, textura extremamente detalhada, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Masculina Premium', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Minimalista</span><span class="prompt-desc">Camiseta em manequim preto, mão com luva preta, loja minimalista • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta da imagem enviada. Vista-a em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, montado sobre um suporte metálico preto fino visível abaixo da camiseta. A camiseta permanece totalmente de frente. Uma mão masculina real usando uma luva preta segura levemente a manga da camiseta para destacar o acabamento. Fundo de uma loja minimalista com tons claros, iluminação indireta, móveis modernos e ambiente clean. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Minimalista', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Industrial</span><span class="prompt-desc">Camiseta em manequim preto, mão tatuada, loja de estilo industrial • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta enviada. Coloque-a em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico preto fino visível abaixo da camiseta. A peça está posicionada de frente. Uma mão masculina real tatuada passa pela estampa enquanto a outra segura o ombro da camiseta. Fundo de uma loja com estilo industrial, concreto aparente, iluminação em LED, estrutura metálica preta e decoração moderna. Fotografia comercial hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Industrial', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-masculino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Boutique Sofisticada</span><span class="prompt-desc">Camiseta em manequim preto, mão com luva preta, boutique sofisticada • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta enviada, mantendo todos os detalhes originais. Vista a peça em um manequim preto brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, montado sobre um suporte metálico preto fino visível abaixo da camiseta. A camiseta está de frente para a câmera. Uma mão masculina real usando uma luva preta apoia o ombro da camiseta enquanto outra mão toca levemente a parte inferior da estampa. Fundo de uma boutique sofisticada com iluminação dourada, móveis de alto padrão, vitrine elegante e ambiente luxuoso. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Boutique Sofisticada', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: MANEQUIM DOURADO — LOJA FEMININA ═══════════════ -->
+  <div class="section" data-category="manequim-feminino">
+    <div class="section-header">
+      <div class="section-icon">👗</div>
+      <div class="section-title">Manequim Dourado — Loja Feminina</div>
+      <span class="section-count">8 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Feminina Premium</span><span class="prompt-desc">Camiseta em manequim dourado, mão feminina com pulseira, boutique premium • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Use exatamente a camiseta da imagem enviada, sem alterar a estampa, cores, gola ou tecido. Vista a camiseta em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta está de frente para a câmera. Uma mão feminina real, com unhas elegantes em tom nude e usando uma pulseira delicada dourada, toca levemente a parte frontal da camiseta para destacá-la, como em um vídeo de apresentação de loja. Cenário de uma boutique feminina premium com móveis claros, detalhes em dourado, decoração sofisticada, iluminação quente em LED, araras organizadas e ambiente luxuoso. Fotografia hiper-realista, aparência de catálogo profissional, foco total na camiseta, textura extremamente detalhada, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Feminina Premium', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Boutique Feminina Moderna</span><span class="prompt-desc">Camiseta em manequim dourado, mão com luva preta, boutique moderna • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta da imagem enviada. Coloque-a em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta está de frente para a câmera. Uma mão feminina real usando uma luva preta elegante segura suavemente o ombro da camiseta, simulando uma apresentação para TikTok Shop. Fundo de uma boutique feminina moderna com iluminação quente, móveis minimalistas, espelhos grandes, detalhes dourados e decoração sofisticada. Fotografia comercial hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Boutique Feminina Moderna', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Fashion Feminina</span><span class="prompt-desc">Camiseta em manequim dourado, mão com unhas nude, loja fashion • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta enviada, sem modificar qualquer detalhe da estampa, tecido ou modelagem. Vista a camiseta em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da peça. A camiseta está totalmente de frente para a câmera. Uma mão feminina real, com unhas impecáveis em tom nude e usando pulseiras delicadas, desliza sobre a estampa como em uma apresentação profissional de produto. Fundo de uma loja fashion feminina com paredes claras, iluminação aconchegante, araras organizadas, decoração contemporânea e detalhes em dourado. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Fashion Feminina', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Showroom Feminino de Luxo</span><span class="prompt-desc">Camiseta em manequim dourado, mão com luva preta, showroom de luxo • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Mantenha exatamente a camiseta da imagem enviada. Vista a peça em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta está posicionada de frente para a câmera. Uma mão feminina real usando uma luva preta segura delicadamente a gola da camiseta enquanto a outra aponta para a estampa, simulando uma demonstração profissional. Fundo de um showroom feminino de luxo com painéis ripados claros, iluminação quente, decoração elegante, móveis sofisticados e ambiente premium. Fotografia extremamente realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Showroom Feminino de Luxo', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Boutique Elegante</span><span class="prompt-desc">Camiseta em manequim dourado, mão com unhas em gel, boutique premium • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta enviada. Coloque-a em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta está totalmente de frente para a câmera. Uma mão feminina real com unhas em gel e pulseira delicada apoia a peça pelo ombro enquanto a outra toca suavemente a estampa, simulando uma apresentação para redes sociais. Fundo de uma boutique feminina premium com móveis claros, vitrines elegantes, iluminação quente, detalhes em dourado e ambiente sofisticado. Fotografia hiper-realista, textura extremamente detalhada, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Boutique Elegante', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Clean Feminina</span><span class="prompt-desc">Camiseta em manequim dourado, mão com luva preta, loja clean • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta da imagem enviada. Vista-a em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, montado sobre um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta permanece totalmente de frente. Uma mão feminina real usando uma luva preta elegante segura delicadamente uma das mangas da camiseta para destacar o acabamento. Fundo de uma loja feminina clean com paredes claras, iluminação suave, decoração minimalista, móveis modernos e ambiente sofisticado. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Clean Feminina', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Loja Feminina Contemporânea</span><span class="prompt-desc">Camiseta em manequim dourado, mão com unhas elegantes, loja contemporânea • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Preserve exatamente a camiseta enviada. Coloque-a em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, apoiado em um suporte metálico dourado fino e central, visível abaixo da camiseta. A peça está posicionada de frente. Uma mão feminina real com unhas elegantes passa suavemente pela estampa enquanto a outra segura o ombro da camiseta. Fundo de uma loja feminina contemporânea com iluminação em LED, decoração sofisticada, araras organizadas, espelhos modernos e detalhes dourados. Fotografia comercial hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Loja Feminina Contemporânea', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="manequim-feminino">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Boutique Luxuosa</span><span class="prompt-desc">Camiseta em manequim dourado, mão com luva preta, boutique luxuosa • ChatGPT / Gemini / Grok</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag grok">Grok</span><span class="tool-tag chatgpt">ChatGPT</span><span class="tool-tag gemini">Gemini</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">Utilize exatamente a camiseta enviada, mantendo todos os detalhes originais. Vista a peça em um manequim dourado brilhante sem cabeça, contendo apenas um pescoço cilíndrico curto e liso, montado sobre um suporte metálico dourado fino e central, visível abaixo da camiseta. A camiseta está de frente para a câmera. Uma mão feminina real usando uma luva preta elegante apoia o ombro da camiseta enquanto a outra toca levemente a parte inferior da estampa. Fundo de uma boutique luxuosa com lustres modernos, móveis claros, decoração refinada, detalhes em dourado e iluminação quente. Fotografia hiper-realista, qualidade 8K, formato vertical 9:16.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Boutique Luxuosa', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ SEÇÃO: VÍDEOS PARA CRIAR NO MANEQUIM ═══════════════ -->
+  <div class="section" data-category="videos-manequim">
+    <div class="section-header">
+      <div class="section-icon">📹</div>
+      <div class="section-title">Vídeos para Criar no Manequim</div>
+      <span class="section-count">11 prompts</span>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">01</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Apresentação Completa</span><span class="prompt-desc">Alisa a estampa, ajusta a gola, passa pela manga e estica a barra • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão alisa rapidamente a estampa, em seguida ajusta a gola, passa pela manga e finaliza esticando levemente a barra da camiseta. Movimentos naturais e contínuos. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Apresentação Completa', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">02</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Inspeção da Qualidade</span><span class="prompt-desc">Toca a estampa, desliza até a manga e ajusta a barra • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão toca a estampa, desliza até a manga, destaca a costura e finaliza ajustando a barra da camiseta. Movimento fluido e realista. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Inspeção da Qualidade', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">03</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Revisão da Peça</span><span class="prompt-desc">Passa pela gola, percorre a estampa e ajusta a manga • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão passa pela gola, percorre a estampa, ajusta uma manga e termina esticando a parte inferior da camiseta. Movimentos contínuos e naturais. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Revisão da Peça', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">04</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Destaque da Estampa</span><span class="prompt-desc">Passa pela estampa duas vezes e alisa toda a frente • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão passa sobre a estampa duas vezes em direções diferentes, faz pequenos toques nos detalhes e finaliza alisando toda a frente da camiseta. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Destaque da Estampa', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">05</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Apresentação de Loja</span><span class="prompt-desc">Ajusta a gola, alisa a estampa e mostra o acabamento da manga • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão ajusta a gola, alisa a estampa, levanta rapidamente a manga para mostrar o acabamento e retorna ao centro da camiseta. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Apresentação de Loja', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">06</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Conferindo os Acabamentos</span><span class="prompt-desc">Percorre gola, manga e barra em uma inspeção completa • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão percorre rapidamente a gola, a manga direita, a barra e retorna ao centro da estampa, simulando uma inspeção completa da peça. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Conferindo os Acabamentos', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">07</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Mostrando o Tecido</span><span class="prompt-desc">Alisa a camiseta, estica o tecido e destaca a estampa • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão alisa a camiseta, estica levemente o tecido, passa pela manga e finaliza destacando a estampa. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Mostrando o Tecido', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">08</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Demonstração Premium</span><span class="prompt-desc">Ajusta pelo ombro, desliza sobre a estampa e alinha a barra • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão ajusta a camiseta pelo ombro, desliza sobre a estampa, destaca a manga e finaliza alinhando a barra. Sequência dinâmica de apresentação de produto. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Demonstração Premium', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">09</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Inspeção Express</span><span class="prompt-desc">Passa rapidamente pela frente, gola e manga da camiseta • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão passa rapidamente por toda a frente da camiseta, toca a gola, mostra a manga e finaliza alisando a estampa. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Inspeção Express', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">10</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Vitrine Premium</span><span class="prompt-desc">Percorre estampa, gola, mangas e barra em sequência contínua • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão percorre toda a camiseta em movimentos naturais, destacando a estampa, a gola, as mangas e a barra em uma sequência contínua, como em uma apresentação profissional de loja. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Vitrine Premium', this)">↗ Ver completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prompt-card" data-category="videos-manequim">
+      <div class="prompt-header" onclick="toggleCard(this)">
+        <div class="prompt-title-row">
+          <span class="prompt-number">11</span>
+          <span class="prompt-title-wrap"><span class="prompt-title">Apresentação da Peça Completamente</span><span class="prompt-desc">Alisa a estampa 3x, ajusta a gola e estica a barra • WAN</span></span>
+        </div>
+        <div class="prompt-tools"><span class="tool-tag" style="background:rgba(201,169,110,0.08);color:#c9a96e;border:1px solid rgba(201,169,110,0.3);">WAN</span></div>
+        <div class="expand-btn">▼</div>
+      </div>
+      <div class="prompt-body">
+        <div class="prompt-body-inner">
+          <div class="prompt-text">A mão alisa rapidamente a estampa 3x, em seguida ajusta a gola, passa pela manga e finaliza esticando levemente a barra da camiseta. Movimentos naturais e contínuos. Sem falas, sem legendas, sem textos na tela, sem logotipos e sem marcas d’água. Movimentos naturais e contínuos, ritmo normal de apresentação de produto, sem câmera lenta, sem movimentos exagerados, mantendo a aparência de um vídeo gravado à mão em uma loja de roupas.</div>
+          <div class="prompt-actions">
+            <button class="btn-copy" onclick="copyPrompt(this)">📋 Copiar Prompt</button>
+            <button class="btn-expand-full" onclick="openModal('Apresentação da Peça Completamente', this)">↗ Ver completo</button>
           </div>
         </div>
       </div>
@@ -3462,4 +4854,4 @@ An authentic, emotionally compelling product reaction animation that captures ge
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
-</html>   
+</html>
